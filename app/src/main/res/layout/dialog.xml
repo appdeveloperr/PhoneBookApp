@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="7"
+    >
+
+
+
+    <ImageView
+
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:background="@drawable/user"
+        android:id="@+id/Dimg"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"/>
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="30dp"
+        android:layout_below="@id/lb1"
+        android:id="@+id/namev"
+        android:layout_weight="1"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="30dp"
+        android:layout_below="@id/lb2"
+        android:id="@+id/phonev"
+        android:layout_weight="1"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <Button
+
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/editbt"
+        android:background="@drawable/edit"
+        android:gravity="bottom"
+
+        />
+
+
+    <Button
+        android:id="@+id/deletebt"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:background="@drawable/delete"
+        android:layout_alignTop="@+id/editbt"
+        android:layout_toRightOf="@id/editbt"
+        android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/deletebt"
+            android:layout_alignTop="@+id/deletebt"
+            android:id="@+id/call"
+            android:background="@drawable/dialer"
+            />
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/call"
+            android:layout_alignTop="@+id/call"
+            android:id="@+id/msg"
+            android:background="@drawable/message"/>
+
+    </RelativeLayout>
+</LinearLayout>
